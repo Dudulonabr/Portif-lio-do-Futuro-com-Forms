@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Portifólio</title>
+    <meta name="description" content="Esse é um site de um portifólio profissional">
+    <meta name="keywords" content="profissional, programador, desenvolvedor , tecnologia.">
+    <meta name="author" content="Eduardo Lona">
+</head>
+<body>
+    <header>
+    <a href="#" class="logo">Eduardo</a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fa fa-bars"></label>
+    <nav>
+        <a href="#" class="active"></a>
+        <a href="#servicos">Serviços</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#formacao">Formação</a>
+        <a href="#Projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+    <section class="home">
+        <div class="home-img">
+            <img src="./img/Design sem nome.png">
+        </div>
+        <div class="home-content">
+            <h1>Oi, meu nome é <span>Eduardo</span></h1>
+            <h3 class="typing-text">Eu sou <span id="typing"></span></h3>
+            <p>Minha jornada começou no Ensino Médio Técnico em Informática, onde descobri minha paixão por tecnologia. Depois, aprofundei minha base em Análise e Desenvolvimento de Sistemas, evoluindo para Engenharia da Computação e áreas de especialização em Cybersegurança e Inteligência Artificial. Hoje, lidero projetos globais que unem automação, IA e cibersegurança, ajudando empresas, governos e cidades a avançarem em direção a um futuro inteligente, seguro e sustentável.</p>
+            <div class="social-icons">
+                <a href="https://share.google/i2NisY55QrWvRK6x2"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Dudulonabr"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/http_dudulonabr?s=09"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/edu.lnx?igsh=Y21kZm00Mnl3YXF2"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://open.spotify.com/user/k8egk3289c124bqqqswku9wpe?si=CV9YkCZcQoSQC96g3407nw"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.reddit.com/"><i class="fa-brands fa-reddit"></i></a>
+            </div>
+            <a href="https://wa.me/qr/FLY4BK6RD6AGC1" class="btn">Me contrate</a>
+        </div>
+    </section>
+    <script>
+const texts = [
+    "Um Desenvolvedor Front-End",
+    "Um Desenvolvedor de Jogos",
+    "Um Jogador de E-Sports",
+    "Um Atleta de basquete",
+    "Um estudante de TI",
+    "Um aspirante a programador",
+    "Um entusiasta de hardware",
+    "Um futuro profissional de cibersegurança",
+    "Um explorador de novas tecnologias",
+    "Um aprendiz constante",
+    "Um sonhador determinado"
+
+];
+let count = 0;
+let index = 0;
+let currentText = '';
+let letter = '';
+let isDeleting = false;
+const typingElement = document.getElementById('typing');
+
+function type() {
+    currentText = texts[count % texts.length];
+    if (isDeleting) {
+        letter = currentText.substring(0, index--);
+    } else {
+        letter = currentText.substring(0, index++);
+    }
+    typingElement.textContent = letter;
+
+    let typeSpeed = 120;
+    if (isDeleting) typeSpeed /= 2;
+
+    if (!isDeleting && index === currentText.length + 1) {
+        isDeleting = true;
+        typeSpeed = 1000; 
+    } else if (isDeleting && index === 0) {
+        isDeleting = false;
+        count++;
+        typeSpeed = 500; 
+    }
+    setTimeout(type, typeSpeed);
+}
+type();
+</script>
+<section id="servicos" class="blocos">
+            <div></div><h3 ><span>Serviços</span></h3></div>
+            <p>Minha atuação profissional vai além do desenvolvimento de soluções técnicas, abrangendo também consultoria e criação de estratégias para empresas, governos e cidades que desejam se adaptar a um futuro cada vez mais digital. Entre os serviços que ofereço, está a criação de plataformas de automação global, que permitem integrar indústrias e processos em sistemas inteligentes.
+                <br><br>
+            Trabalho também com consultoria estratégica em transformação digital e cibersegurança, ajudando organizações a fortalecer sua infraestrutura tecnológica, prevenir ataques e adotar práticas modernas de segurança. Outro foco é o desenvolvimento de infraestruturas inteligentes para cidades e empresas, promovendo mobilidade, sustentabilidade e eficiência por meio da tecnologia.
+                <br><br>
+            Além disso, atuo na pesquisa e implementação de soluções de Inteligência Artificial aplicadas a grandes negócios e à sociedade, permitindo que empresas se beneficiem de análises preditivas, automação de processos e inovação constante. Por fim, ajudo na construção de ecossistemas tecnológicos sustentáveis, sempre alinhados a práticas responsáveis que unem desenvolvimento econômico e preservação ambiental.</p>
+            
+        </section>
+
+        <section id="habilidades" class="blocos">
+            <h3><span>Habilidades</span></h3>
+            <p>Ao longo dos anos, desenvolvi um conjunto diversificado de habilidades que me permite atuar de maneira integrada em diferentes áreas da tecnologia. Na programação, domino linguagens como Python, C++, JavaScript, Rust e Go, que utilizo para aplicações que variam desde inteligência artificial até sistemas de alto desempenho.
+            <br><br>
+            No desenvolvimento de software e web, trabalho com HTML, CSS, React e Node.js, além de arquiteturas baseadas em microsserviços, o que possibilita a criação de plataformas escaláveis, seguras e modernas. Em Inteligência Artificial, minhas competências incluem Deep Learning, IA Generativa, Big Data, NLP e Visão Computacional, áreas fundamentais para criar soluções que imitam a cognição humana e otimizam processos em grande escala.
+            <br><br>
+            Também atuo fortemente em automação, com foco em IoT, Indústria 4.0, Robótica e Computação em Nuvem, desenvolvendo ecossistemas integrados que conectam máquinas, dados e pessoas. Na área de Cybersegurança, meu trabalho envolve desde criptografia avançada até segurança pós-quântica, garantindo proteção contra ameaças emergentes no cenário digital global.
+            <br><br>
+            Minha experiência em infraestrutura inclui Cloud Computing (AWS, Azure e GCP), Kubernetes, Linux e DevOps, permitindo gerenciar sistemas complexos com alta disponibilidade e resiliência. Para completar, aplico esses conhecimentos dentro de uma visão estratégica de negócios, com ênfase em liderança de equipes globais, transformação digital e inovação tecnológica, sempre alinhando objetivos empresariais com avanços técnicos.</p>
+            
+        </section>
+
+        <section id="formacao" class="blocos">
+            <h3><span>Formação</span></h3>
+            <p><p>Minha formação acadêmica reflete uma construção sólida e progressiva, voltada para acompanhar o avanço tecnológico e suas aplicações no mundo real. Tudo começou com o Ensino Médio Técnico em Informática, onde tive meu primeiro contato direto com programação, redes e manutenção de sistemas. Esse período foi essencial para despertar minha paixão por tecnologia e abrir caminho para os próximos passos. 
+                <br><br>
+            Em seguida, me graduei como Tecnólogo em Análise e Desenvolvimento de Sistemas (ADS), curso que me proporcionou uma visão prática e aprofundada sobre desenvolvimento de software, banco de dados, arquitetura de sistemas e metodologias ágeis. Essa base técnica foi crucial para minha evolução em Engenharia da Computação, uma formação que ampliou meus horizontes para áreas como eletrônica, hardware, sistemas embarcados e integração entre software e infraestrutura.
+                <br><br>
+            Aprofundando minha jornada, busquei especializações estratégicas: uma pós-graduação em Cybersegurança, com foco em criptografia avançada, segurança pós-quântica e prevenção de ataques em escala global; e uma pós-graduação em Inteligência Artificial e Machine Learning, que me permitiu dominar conceitos de aprendizado profundo, processamento de linguagem natural e visão computacional. Para unir o conhecimento técnico com a capacidade de liderança, concluí também um MBA em Inovação e Liderança Tecnológica, que me preparou para liderar equipes globais, gerenciar projetos complexos e implementar estratégias de transformação digital em larga escala.</p></p>
+            
+        </section>
+
+        <section id="Projetos" class="blocos">
+            <h3><span>Projetos</span></h3>
+            <p>Ao longo da minha jornada, idealizei projetos de impacto global, com o objetivo de transformar diferentes setores e contribuir para um futuro mais conectado, seguro e sustentável.
+                <br><br>
+            O Global Automation Grid (GAG) é uma dessas iniciativas, projetado para conectar fábricas e empresas em um sistema único de automação inteligente, funcionando em escala planetária. Já o MedAI Global é uma rede de inteligência artificial voltada para diagnósticos médicos, capaz de atender bilhões de pessoas em diferentes partes do mundo, democratizando o acesso à saúde.
+                <br><br>
+            Com o AutoCity, trago o conceito de cidades inteligentes autônomas, que utilizam energia limpa, transporte automatizado e gestão digital para garantir mais qualidade de vida aos cidadãos. Complementando esse projeto, o EcoNet é uma rede de monitoramento ambiental em tempo real, dedicada a proteger florestas, rios e oceanos em todo o planeta.
+                <br><br>
+            Na área de segurança digital, desenvolvi o QuantumShield X, uma plataforma de proteção quântica em escala mundial, voltada especialmente para bancos, governos e multinacionais. Já na educação, o Global AI Education busca criar uma rede educacional movida por inteligência artificial, democratizando o acesso ao conhecimento de qualidade. Por fim, o OrbitalNet tem como objetivo expandir a conectividade global por meio de satélites inteligentes, levando internet de alta velocidade para regiões remotas e pouco assistidas.
+                <br><br>
+            Esses projetos representam a união entre visão de futuro, inovação tecnológica e impacto social, reforçando meu compromisso em transformar o mundo por meio da inteligência artificial, da automação e da segurança digital.</p>
+            
+        </section>
+
+        <section id="contato" class="blocos">
+            <h3><span>Contato</span></h3>
+            <p>Estou sempre aberto a novas conexões, parcerias e projetos que tenham como objetivo transformar o futuro por meio da tecnologia, da automação e da inteligência artificial. Se você busca inovação, soluções estratégicas ou deseja trocar ideias sobre o impacto da tecnologia no mundo, será um prazer conversar.<br>
+            Entre em contato comigo através das minhas redes ou envie uma mensagem via e-mail: <a href="mailto:dudulona07@gmail.com">dudulona07@gmail.com</a>.<br><br>
+            Estou aberto a parcerias, convites para eventos, colaborações em projetos e oportunidades de projetos.<br>
+        Vamos conversar e construir algo juntos?</p>
+            
+        </section>
+        
+</body>
+</html>
