@@ -139,11 +139,25 @@ type();
 
         <section id="contato" class="blocos">
             <h3><span>Contato</span></h3>
-            <p>Estou sempre aberto a novas conexões, parcerias e projetos que tenham como objetivo transformar o futuro por meio da tecnologia, da automação e da inteligência artificial. Se você busca inovação, soluções estratégicas ou deseja trocar ideias sobre o impacto da tecnologia no mundo, será um prazer conversar.<br>
-            Entre em contato comigo através das minhas redes ou envie uma mensagem via e-mail: <a href="mailto:dudulona07@gmail.com">dudulona07@gmail.com</a>.<br><br>
-            Estou aberto a parcerias, convites para eventos, colaborações em projetos e oportunidades de projetos.<br>
-        Vamos conversar e construir algo juntos?</p>
-            
+            <div class="contato-form">
+        <h2>Entre em Contato</h2>
+        <form action="https://formsubmit.co/eduardo.mmlona@senacsp.edu.br" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite o assunto que deseja abordar comigo" required></textarea>
+
+            <button type="submit">Enviar</button>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+        </form>
+    </div> 
         </section>
         
 </body>

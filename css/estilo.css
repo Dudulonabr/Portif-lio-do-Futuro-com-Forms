@@ -381,3 +381,70 @@ section p {
 #contato .btn:hover{
     transform: scale(1);
 }
+.contato-form {
+    max-width: 700px;         /* aumente a largura máxima */
+    margin: 48px auto;
+    background: #111;
+    border-radius: 32px;
+    box-shadow: 0 0 32px 6px #3d5ca6, 0 0 60px 12px #0059ff44;
+    padding: 64px 48px;       /* aumente o padding */
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.contato-form h2 {
+    text-align: center;
+    color: #3d5ca6;
+    margin-bottom: 32px;
+    font-size: 4rem;
+    text-shadow: 0 0 12px #3d5ca6, 0 0 2px #fff;
+}
+
+.contato-form label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 24px;
+    border: 2px solid #3d5ca6;
+    border-radius: 10px;
+    background: #181818;
+    color: #fff;
+    font-size: 1.5rem;
+    outline: none;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    box-shadow: 0 0 12px #3d5ca644;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+    border-color: #3d5ca6;
+    box-shadow: 0 0 18px #3d5ca6;
+}
+
+.contato-form button {
+    width: 100%;
+    padding: 18px 0;
+    background: #3d5ca6;
+    color: #111;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 18px #3d5ca6;
+    transition: background 0.2s, color 0.2s;
+}
+
+.contato-form button:hover {
+    background: #0059ff;
+    color: #fff;
+}
