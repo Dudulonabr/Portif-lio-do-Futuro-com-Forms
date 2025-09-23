@@ -382,12 +382,12 @@ section p {
     transform: scale(1);
 }
 .contato-form {
-    max-width: 700px;         /* aumente a largura máxima */
+    max-width: 700px;
     margin: 48px auto;
     background: #111;
     border-radius: 32px;
     box-shadow: 0 0 32px 6px #3d5ca6, 0 0 60px 12px #0059ff44;
-    padding: 64px 48px;       /* aumente o padding */
+    padding: 64px 48px;
     color: #fff;
     font-family: 'Montserrat', Arial, sans-serif;
 }
@@ -448,3 +448,134 @@ section p {
     background: #0059ff;
     color: #fff;
 }
+@media (max-width: 600px) {
+    .contato-form {
+        padding: 32px 24px;
+    }
+
+    .contato-form h2 {
+        font-size: 3rem;
+    }
+
+    .contato-form label,
+    .contato-form input,
+    .contato-form textarea,
+    .contato-form button {
+        font-size: 1.4rem;
+    }
+}
+footer{
+    text-align: center;
+    padding: 2rem 9%;
+    background-color: linear-gradient(-90deg, #000000, #444444, #777777);
+    border-top: 0.1rem solid #3d5ca6;
+    border-bottom: 0.1rem solid #3d5ca6;
+}
+footer p{
+    font-size: 1.4rem;
+    color: #fff;
+}
+footer p a{
+    color: #3d5ca6;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+footer p a:hover{
+    color: white;
+    text-decoration: underline;
+}
+@media (max-width: 600px){
+    footer p{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 400px){
+    footer p{
+        font-size: 1rem;
+    }
+}
+.blocos{
+    margin-bottom: 10rem;
+}
+.blocos .bloco{
+    margin-bottom: 5rem;
+}
+.blocos .bloco:nth-child(even) img{
+    float: right;
+    margin-left: 2rem;
+}
+.blocos .bloco:nth-child(odd) img{
+    float: left;
+    margin-right: 2rem;
+}
+.blocos .bloco::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+@media (max-width: 920px){
+    .bloco img{
+        float: none;
+        display: block;
+        margin: 2rem auto;
+        width: 80%;
+    }
+}
+@media (max-width: 600px){
+    .blocos h3{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .blocos p{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 400px){
+    .blocos h3{
+        font-size: 2rem;
+    }
+    .blocos p{
+        font-size: 1.8rem;
+    }
+}
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-track{
+    background: #111;
+    border-left: 0.2rem solid #3d5ca6;
+    border-right: 0.2rem solid #3d5ca6;
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    background: #3d5ca6;
+    border-radius: 1rem;
+    border-left: 0.2rem solid #3d5ca6;
+    border-right: 0.2rem solid #3d5ca6;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #0059ff;
+}
+@media (max-width: 600px){
+    header{
+        padding: 1rem 4%;
+    }
+    section{
+        padding: 5rem 4%;
+    }
+}
+@media (max-width: 400px){
+    header{
+        padding: 1rem 2%;
+    }
+    section{
+        padding: 5rem 2%;
+    }
+}
+@media (max-width: 300px){
+    .home-img img{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+}
+
